@@ -76,6 +76,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Entry overlay — the click needed to dismiss it is a real, trusted
+  // user gesture, so it doubles as the browser-approved way to unlock
+  // audio autoplay (this is why it exists, not just for looks).
+  const entryOverlay = document.getElementById('entry-overlay');
+  if (entryOverlay) {
+    entryOverlay.addEventListener('click', () => {
+      entryOverlay.classList.add('dismissed');
+      const bgMusic = document.getElementById('bg-music');
+      if (bgMusic) bgMusic.play().catch(() => {});
+      setTimeout(() => entryOverlay.remove(), 1200);
+    }, { once: true });
+  }
+
   // Background music toggle
   const musicBtn = document.getElementById('music-toggle');
   const musicEl = document.getElementById('bg-music');
