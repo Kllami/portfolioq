@@ -113,9 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const startOnFirstInteraction = () => {
         musicEl.play().catch(() => {});
       };
-      ['click', 'keydown', 'touchstart', 'scroll'].forEach((evt) => {
+      ['click', 'keydown', 'touchstart'].forEach((evt) => {
         document.addEventListener(evt, startOnFirstInteraction, { once: true, passive: true });
       });
+      window.addEventListener('scroll', startOnFirstInteraction, { once: true, passive: true });
     });
   }
 });
