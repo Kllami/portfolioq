@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // than inside a .catch(), since relying on the promise settling
     // proved unreliable. Calling play() again once already playing is
     // a harmless no-op, so there's no risk of double-starting it.
+    // Note: 'scroll' is intentionally excluded — browsers don't treat
+    // it as a user gesture capable of unlocking audio autoplay.
     musicEl.play().catch(() => {});
     const startOnFirstInteraction = () => {
       musicEl.play().catch(() => {});
@@ -119,6 +121,5 @@ document.addEventListener('DOMContentLoaded', () => {
     ['click', 'keydown', 'touchstart'].forEach((evt) => {
       document.addEventListener(evt, startOnFirstInteraction, { once: true, passive: true });
     });
-    window.addEventListener('scroll', startOnFirstInteraction, { once: true, passive: true });
   }
 });
