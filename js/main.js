@@ -106,17 +106,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Try to play as soon as the page loads. Browsers block audible
-    // autoplay without a prior user gesture, so if this gets rejected,
-    // fall back to starting on the user's very first interaction with
-    // the page — the closest practical equivalent to "on by default".
-    musicEl.play().catch(() => {
-      const startOnFirstInteraction = () => {
-        musicEl.play().catch(() => {});
-      };
-      ['click', 'keydown', 'touchstart'].forEach((evt) => {
-        document.addEventListener(evt, startOnFirstInteraction, { once: true, passive: true });
-      });
-      window.addEventListener('scroll', startOnFirstInteraction, { once: true, passive: true });
+    // autoplay without a prior user gesture, so this will likely be
+    // rejected (or simply never settle, observed under file://) — the
+    // fallback listeners below are registered unconditionally rather
+    // than inside a .catch(), since relying on the promise settling
+    // proved unreliable. Calling play() again once already playing is
+    // a harmless no-op, so there's no risk of double-starting it.
+    musicEl.play().catch(() => {});
+    const startOnFirstInteraction = () => {
+      musicEl.play().catch(() => {});
+    };
+    ['click', 'keydown', 'touchstart'].forEach((evt) => {
+      document.addEventListener(evt, startOnFirstInteraction, { once: true, passive: true });
     });
+    window.addEventListener('scroll', startOnFirstInteraction, { once: true, passive: true });
   }
 });
