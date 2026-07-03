@@ -75,4 +75,34 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
+
+  // Background music toggle
+  const musicBtn = document.getElementById('music-toggle');
+  const musicEl = document.getElementById('bg-music');
+  if (musicBtn && musicEl) {
+    musicEl.volume = 0.4;
+
+    // Drive the UI from the audio element's own events, not from assumptions
+    // made at click time — avoids desync from play()/pause() race conditions.
+    musicEl.addEventListener('play', () => {
+      musicBtn.classList.add('playing');
+      musicBtn.querySelector('i').className = 'bi bi-pause-fill';
+      musicBtn.setAttribute('aria-pressed', 'true');
+      musicBtn.setAttribute('aria-label', 'Pause background music');
+    });
+    musicEl.addEventListener('pause', () => {
+      musicBtn.classList.remove('playing');
+      musicBtn.querySelector('i').className = 'bi bi-music-note';
+      musicBtn.setAttribute('aria-pressed', 'false');
+      musicBtn.setAttribute('aria-label', 'Play background music');
+    });
+
+    musicBtn.addEventListener('click', () => {
+      if (musicEl.paused) {
+        musicEl.play().catch((e) => console.warn('Playback blocked', e));
+      } else {
+        musicEl.pause();
+      }
+    });
+  }
 });

@@ -181,6 +181,17 @@ a { text-decoration: none; color: var(--accent); }
 .scroll-top.active { opacity: 1; visibility: visible; }
 .scroll-top i { font-size: 24px; }
 
+/* ===== Music toggle ===== */
+.music-toggle {
+  position: fixed; right: 20px; bottom: 76px; z-index: 999;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--dark-2); border: 1px solid var(--accent);
+  color: var(--accent); transition: 0.3s;
+}
+.music-toggle:hover { background: var(--accent); color: #fff; }
+.music-toggle.playing { background: var(--accent); color: #fff; }
+.music-toggle i { font-size: 19px; }
+
 @media (max-width: 768px) {
   .hero h1 { font-size: 34px; }
   .hero-avatar { width: 180px; height: 180px; font-size: 42px; margin-top: 30px; }
