@@ -31,6 +31,15 @@ a { text-decoration: none; color: var(--accent); }
 }
 .logo span { font-size: 22px; font-weight: 600; color: var(--text-light); }
 .logo strong { color: var(--accent); }
+.logo-sep { font-size: 16px !important; font-weight: 300 !important; color: var(--text-muted) !important; margin: 0 12px; }
+.logo-subtitle {
+  font-size: 13px !important; font-weight: 300 !important;
+  color: var(--text-muted) !important; letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .logo-sep, .logo-subtitle { display: none; }
+}
 
 .navbar ul { display: flex; list-style: none; margin: 0; padding: 0; gap: 8px; }
 .navbar a {

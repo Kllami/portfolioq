@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const items = typedEl.getAttribute('data-typed-items').split(',');
       new Typed('.typed', {
         strings: items,
+        contentType: null,
         typeSpeed: 45,
         backSpeed: 25,
         backDelay: 1800,
