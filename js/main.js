@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const musicBtn = document.getElementById('music-toggle');
   const musicEl = document.getElementById('bg-music');
   if (musicBtn && musicEl) {
-    musicEl.volume = 0.4;
+    musicEl.volume = 0.25;
 
     // Drive the UI from the audio element's own events, not from assumptions
     // made at click time — avoids desync from play()/pause() race conditions.
@@ -103,6 +103,19 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         musicEl.pause();
       }
+    });
+
+    // Try to play as soon as the page loads. Browsers block audible
+    // autoplay without a prior user gesture, so if this gets rejected,
+    // fall back to starting on the user's very first interaction with
+    // the page — the closest practical equivalent to "on by default".
+    musicEl.play().catch(() => {
+      const startOnFirstInteraction = () => {
+        musicEl.play().catch(() => {});
+      };
+      ['click', 'keydown', 'touchstart', 'scroll'].forEach((evt) => {
+        document.addEventListener(evt, startOnFirstInteraction, { once: true, passive: true });
+      });
     });
   }
 });
