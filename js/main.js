@@ -1,3 +1,11 @@
+// Re-assert top scroll after full load / bfcache restore — mobile browsers
+// sometimes settle a few pixels down once the address bar collapses.
+window.addEventListener('pageshow', () => {
+  if (!location.hash && window.scrollY > 0 && window.scrollY < 80) {
+    window.scrollTo(0, 0);
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // Year in footer
