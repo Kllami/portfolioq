@@ -53,7 +53,7 @@ a { text-decoration: none; color: var(--accent); }
 .navbar a:hover, .navbar a.active { color: #fff; background: var(--accent); }
 .mobile-nav-toggle { display: none; font-size: 26px; cursor: pointer; color: var(--text-light); }
 
-@media (max-width: 991px) {
+@media (max-width: 1250px) {
   .navbar ul {
     position: fixed; inset: 60px 20px auto auto;
     flex-direction: column; background: var(--dark-2);
