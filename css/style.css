@@ -51,7 +51,10 @@ a { text-decoration: none; color: var(--accent); }
   transition: 0.3s;
 }
 .navbar a:hover, .navbar a.active { color: #fff; background: var(--accent); }
-.mobile-nav-toggle { display: none; font-size: 26px; cursor: pointer; color: var(--text-light); }
+.mobile-nav-toggle {
+  display: none; font-size: 26px; cursor: pointer; color: var(--text-light);
+  background: none; border: 0; padding: 0; line-height: 1;
+}
 
 @media (max-width: 1250px) {
   .navbar ul {
@@ -276,4 +279,13 @@ a { text-decoration: none; color: var(--accent); }
   .hero h1 { font-size: 34px; }
   .hero-avatar { width: 180px; height: 180px; font-size: 42px; margin-top: 30px; }
   .hero-photo { width: 200px; height: 200px; margin-top: 30px; }
+}
+
+/* ===== Keyboard focus ===== */
+a:focus-visible,
+button:focus-visible,
+.mobile-nav-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
 }

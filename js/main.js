@@ -16,11 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   try { if (window.AOS) AOS.init({ duration: 700, once: true, offset: 60 }); }
   catch (e) { console.warn('AOS init failed', e); }
 
-  // PureCounter
-  try {
-    if (typeof window.PureCounter === 'function') new PureCounter();
-  } catch (e) { console.warn('PureCounter init failed', e); }
-
   // Typed.js hero role
   try {
     const typedEl = document.querySelector('.typed');
@@ -37,43 +32,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   } catch (e) { console.warn('Typed init failed', e); }
 
-  // Mobile nav toggle
+  // Mobile nav toggle (button + icon, keyboard accessible)
   const navbar = document.querySelector('#navbar');
   const toggle = document.querySelector('.mobile-nav-toggle');
+  const toggleIcon = toggle ? toggle.querySelector('i') : null;
+
+  const setNav = (open) => {
+    if (!navbar || !toggle) return;
+    navbar.classList.toggle('navbar-mobile', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+    if (toggleIcon) {
+      toggleIcon.classList.toggle('bi-list', !open);
+      toggleIcon.classList.toggle('bi-x', open);
+    }
+  };
+
   if (toggle) {
-    toggle.addEventListener('click', () => {
-      navbar.classList.toggle('navbar-mobile');
-      toggle.classList.toggle('bi-list');
-      toggle.classList.toggle('bi-x');
-    });
+    toggle.addEventListener('click', () => setNav(!navbar.classList.contains('navbar-mobile')));
   }
   document.querySelectorAll('#navbar a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile');
-        toggle.classList.add('bi-list');
-        toggle.classList.remove('bi-x');
-      }
-    });
+    link.addEventListener('click', () => setNav(false));
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navbar && navbar.classList.contains('navbar-mobile')) setNav(false);
   });
 
-  // Scroll spy (active nav link)
+  // Scroll spy (active nav link) + scroll-to-top button, throttled with rAF
   const sections = document.querySelectorAll('main section, #hero');
   const navLinks = document.querySelectorAll('#navbar a');
-  window.addEventListener('scroll', () => {
+  const scrollTopEl = document.getElementById('scroll-top');
+  let ticking = false;
+
+  const onScroll = () => {
     let current = 'hero';
     sections.forEach(sec => {
-      const top = sec.offsetTop - 120;
-      if (window.scrollY >= top) current = sec.getAttribute('id');
+      if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
     });
     navLinks.forEach(link => {
       link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
     });
+    if (scrollTopEl) scrollTopEl.classList.toggle('active', window.scrollY > 300);
+    ticking = false;
+  };
 
-    // Scroll-to-top button
-    const scrollTop = document.getElementById('scroll-top');
-    if (scrollTop) scrollTop.classList.toggle('active', window.scrollY > 300);
-  });
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(onScroll);
+    }
+  }, { passive: true });
+  onScroll();
 
   // Scroll to top click
   const scrollTopBtn = document.getElementById('scroll-top');

@@ -8,8 +8,12 @@ Write-Host "Serving $root on http://localhost:$port/"
 $mime = @{
   ".html"="text/html"; ".css"="text/css"; ".js"="application/javascript";
   ".png"="image/png"; ".jpg"="image/jpeg"; ".jpeg"="image/jpeg"; ".svg"="image/svg+xml";
-  ".ico"="image/x-icon"; ".pdf"="application/pdf"; ".json"="application/json"
+  ".ico"="image/x-icon"; ".pdf"="application/pdf"; ".json"="application/json";
+  ".webp"="image/webp"; ".xml"="application/xml"; ".txt"="text/plain";
+  ".docx"="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 }
+
+$rootFull = [System.IO.Path]::GetFullPath($root)
 
 while ($listener.IsListening) {
   $context = $listener.GetContext()
@@ -19,9 +23,12 @@ while ($listener.IsListening) {
     $res.KeepAlive = $false
     $path = $req.Url.LocalPath
     if ($path -eq "/") { $path = "/index.html" }
-    $filePath = Join-Path $root ($path.TrimStart("/"))
+    $filePath = [System.IO.Path]::GetFullPath((Join-Path $root ($path.TrimStart("/"))))
 
-    if (Test-Path $filePath -PathType Leaf) {
+    # Never serve anything outside the site root (e.g. /../../secrets)
+    $insideRoot = $filePath.StartsWith($rootFull, [System.StringComparison]::OrdinalIgnoreCase)
+
+    if ($insideRoot -and (Test-Path $filePath -PathType Leaf)) {
       $ext = [System.IO.Path]::GetExtension($filePath)
       $ct = $mime[$ext]
       if (-not $ct) { $ct = "application/octet-stream" }
