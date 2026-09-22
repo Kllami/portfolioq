@@ -1,0 +1,259 @@
+{
+  "label": "Original (current site)",
+  "typedItems": [
+    "Sr. QA & Software Engineer",
+    "Test Automation Specialist",
+    "Tech Enthusiast",
+    "QA Analyst",
+    "Problem Solver",
+    "Senior SDET",
+    "Systems Engineer"
+  ],
+  "heroSummary": "Senior QA Engineer specializing in Manual and Automation Testing, with 7+ years architecting test strategies across web, desktop, API, and hardware platforms. Fluent in English, remote-ready.",
+  "aboutText": "QA Engineer with 7+ years balancing Manual and Automation Testing across web, desktop, API, and hardware platforms. Skilled in Functional, Regression, API, Performance, and End-to-End Testing, catching critical defects and creating detailed test plans, test cases, and documentation. Equally experienced architecting automation frameworks integrated with CI/CD pipelines, automating UI and API testing, and leveraging AI-powered tools to accelerate test design and execution. Agile/Scrum collaborator working closely with developers and product owners, remote-first, and fluent in English.",
+  "resume": {
+    "href": "assets/Johnny_Chacon_Gairaud_Resume_q.pdf",
+    "label": "Download Resume (.pdf file)"
+  },
+  "leadership": [
+    {
+      "icon": "bi-compass",
+      "eyebrow": "Strategy",
+      "title": "Test Strategy &amp; Architecture",
+      "text": "Architected end-to-end test strategies across Agile and Waterfall SDLCs, aligning coverage with release risk and business priorities.",
+      "chips": [
+        "Agile",
+        "Waterfall",
+        "SDLC"
+      ]
+    },
+    {
+      "icon": "bi-gear-wide-connected",
+      "eyebrow": "Automation",
+      "title": "Automation Framework Development",
+      "text": "Built and maintained scalable automation frameworks powering smoke, sanity, regression, and performance suites.",
+      "chips": [
+        "Selenium",
+        "Playwright",
+        "Cypress"
+      ]
+    },
+    {
+      "icon": "bi-plug",
+      "eyebrow": "Backend",
+      "title": "API &amp; Backend Validation",
+      "text": "Engineered REST API test coverage — authentication, authorization, and session management.",
+      "chips": [
+        "Postman",
+        "SoapUI",
+        "REST"
+      ]
+    },
+    {
+      "icon": "bi-people",
+      "eyebrow": "Collaboration",
+      "title": "Cross-Functional Collaboration",
+      "text": "Partnered with developers, Product Owners, BAs, and clients to scope requirements and de-risk releases.",
+      "chips": [
+        "Developers",
+        "Product Owners",
+        "QA Peers"
+      ]
+    },
+    {
+      "icon": "bi-cpu",
+      "eyebrow": "AI Tooling",
+      "title": "AI-Accelerated QA",
+      "text": "Leveraging AI tools to speed up test-case generation, automation development, and defect analysis.",
+      "chips": [
+        "Codex",
+        "Claude",
+        "Cursor"
+      ]
+    },
+    {
+      "icon": "bi-mortarboard",
+      "eyebrow": "Mentorship",
+      "title": "Mentorship &amp; Team Enablement",
+      "text": "Mentored incoming engineers on coding standards and automation best practices, boosting team velocity.",
+      "chips": [
+        "Coaching",
+        "Standards",
+        "Best Practices"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "QA Engineer",
+      "period": "2023 &ndash; 2026",
+      "company": "QAT Global",
+      "bullets": [
+        "Architected and executed test strategies across the full SDLC, supporting Agile and Waterfall delivery models",
+        "Engineered REST API validation coverage — authentication/authorization, tokens, session management",
+        "Hardened application reliability through systematic negative testing against edge cases and invalid inputs",
+        "Validated web applications built on React and Angular",
+        "Leveraged AI tooling (Codex) to accelerate test-case generation and automation framework development"
+      ],
+      "tools": "Selenium · Playwright · POM · Postman · SoapUI · JMeter · Jenkins · Gradle · TeamCity · Azure DevOps · JIRA · React · Angular"
+    },
+    {
+      "role": "Software Automation Engineer",
+      "period": "2020 &ndash; 2023",
+      "company": "Micro Focus",
+      "bullets": [
+        "Engineered and maintained automation frameworks powering smoke, sanity, regression, and performance suites",
+        "Delivered manual and exploratory testing coverage, triaging user-facing defects",
+        "Drove release readiness as an embedded member of the Scrum team",
+        "Mentored incoming engineers on coding standards and automation best practices"
+      ],
+      "tools": "RHEL · Linux SUSE · Jenkins · Java · Selenium · Gradle · TestNG · Cypress · Postman · Oracle · PostgreSQL · JIRA · Octane"
+    },
+    {
+      "role": "Testing and Automation Engineer",
+      "period": "2019 &ndash; 2020",
+      "company": "HPE",
+      "bullets": [
+        "Automated QA validation for ProLiant Gen10 server hardware and configuration layers",
+        "Architected scalable automation solutions with cross-functional teams",
+        "Engineered functional, integration, and performance testing suites end-to-end"
+      ],
+      "tools": "RHEL · Linux SUSE · Unix · Jenkins · Java · Python · C++ · Selenium · Gradle · TestNG · Oracle · MySQL · Perl · Pandas · Jupyter"
+    }
+  ],
+  "skills": {
+    "left": [
+      {
+        "icon": "bi-code-slash",
+        "title": "Languages &amp; Scripting",
+        "tags": [
+          "C++",
+          "Java EE",
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "Perl"
+        ]
+      },
+      {
+        "icon": "bi-robot",
+        "title": "Automation &amp; Testing",
+        "tags": [
+          "Selenium",
+          "TestNG",
+          "Playwright",
+          "Cypress",
+          "Postman",
+          "SoapUI",
+          "JMeter"
+        ]
+      },
+      {
+        "icon": "bi-diagram-3",
+        "title": "Frameworks &amp; Design Patterns",
+        "tags": [
+          "POM",
+          "MVC",
+          "Singleton"
+        ]
+      },
+      {
+        "icon": "bi-arrow-repeat",
+        "title": "CI/CD &amp; Build",
+        "tags": [
+          "Jenkins",
+          "Gradle",
+          "TeamCity",
+          "Azure DevOps"
+        ]
+      },
+      {
+        "icon": "bi-git",
+        "title": "Version Control",
+        "tags": [
+          "Git",
+          "Git Bash",
+          "GitHub",
+          "Azure Repos"
+        ]
+      }
+    ],
+    "right": [
+      {
+        "icon": "bi-database",
+        "title": "Databases",
+        "tags": [
+          "MySQL",
+          "Oracle",
+          "PostgreSQL",
+          "MS SQL Server"
+        ]
+      },
+      {
+        "icon": "bi-globe",
+        "title": "Web Development",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap",
+          "Materialize",
+          "React",
+          "Angular"
+        ]
+      },
+      {
+        "icon": "bi-bar-chart-line",
+        "title": "Data Analysis",
+        "tags": [
+          "Python",
+          "Pandas",
+          "Jupyter"
+        ]
+      },
+      {
+        "icon": "bi-terminal",
+        "title": "Operating Systems",
+        "tags": [
+          "Linux SUSE",
+          "Linux RHEL",
+          "Windows Server",
+          "Unix"
+        ]
+      },
+      {
+        "icon": "bi-kanban",
+        "title": "Agile &amp; Project Management",
+        "tags": [
+          "Scrum",
+          "Kanban",
+          "JIRA",
+          "Rally",
+          "Jama Connect",
+          "TestLink",
+          "Octane"
+        ]
+      }
+    ],
+    "wide": [
+      {
+        "icon": "bi-cpu",
+        "title": "AI Tooling",
+        "tags": [
+          "Codex",
+          "Claude",
+          "Cursor",
+          "ChatGPT"
+        ]
+      },
+      {
+        "icon": "bi-translate",
+        "title": "Languages Spoken",
+        "tags": [
+          "Spanish (Native)",
+          "English (Advanced/Fluent)"
+        ]
+      }
+    ]
+  }
+}

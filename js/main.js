@@ -16,21 +16,24 @@ document.addEventListener('DOMContentLoaded', () => {
   try { if (window.AOS) AOS.init({ duration: 700, once: true, offset: 60 }); }
   catch (e) { console.warn('AOS init failed', e); }
 
-  // Typed.js hero role
-  try {
-    const typedEl = document.querySelector('.typed');
-    if (typedEl && window.Typed) {
-      const items = typedEl.getAttribute('data-typed-items').split(',');
-      new Typed('.typed', {
-        strings: items,
+  // Typed.js hero role — exposed so the version switch can restart it
+  window.initTyped = () => {
+    try {
+      const typedEl = document.querySelector('.typed');
+      if (!typedEl || !window.Typed) return;
+      if (window.__typed) window.__typed.destroy();
+      typedEl.textContent = '';
+      window.__typed = new Typed('.typed', {
+        strings: typedEl.getAttribute('data-typed-items').split(',').map(s => s.trim()),
         contentType: null,
         typeSpeed: 45,
         backSpeed: 25,
         backDelay: 1800,
         loop: true
       });
-    }
-  } catch (e) { console.warn('Typed init failed', e); }
+    } catch (e) { console.warn('Typed init failed', e); }
+  };
+  window.initTyped();
 
   // Mobile nav toggle (button + icon, keyboard accessible)
   const navbar = document.querySelector('#navbar');

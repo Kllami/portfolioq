@@ -1,0 +1,122 @@
+{
+  "label": "Version Q (2026 resume)",
+  "resume": {
+    "href": "assets/Johnny_Chacon_Gairaud_Resume_q_2026.pdf",
+    "label": "Download Resume (.pdf file)"
+  },
+  "typedItems": [
+    "Sr. QA & Software Engineer",
+    "Senior SDET",
+    "Test Automation Specialist"
+  ],
+  "heroSummary": "Senior QA Engineer / SDET with 7+ years building and scaling test automation across web, desktop, API, and hardware platforms. CI/CD quality gates, API automation in code, and AI-assisted testing. Fluent in English, remote-ready.",
+  "aboutText": "Automation-driven Senior QA Engineer / SDET with 7+ years building and scaling test automation across web, desktop, API, and hardware platforms. I build and maintain automated suites with Selenium, Playwright, Java, Python, and TypeScript, wire them into CI/CD quality gates on Jenkins, TeamCity and Azure DevOps, and write API coverage in code with REST Assured. I work shift-left: risk-based test strategy, early defect detection, containerized runs with Docker, reliable test data, and AI-assisted test design with Codex and GitHub Copilot. Agile/Scrum collaborator working closely with developers and Product Owners, remote-first, and fluent in English.",
+  "leadership": [
+    {
+      "icon": "bi-compass",
+      "eyebrow": "Strategy",
+      "title": "Test Strategy & Shift-Left",
+      "text": "Owned test strategy across Agile and Waterfall SDLCs, and rolled out risk-based, shift-left and API-first testing with developers and Product Owners.",
+      "chips": ["Risk-Based", "Shift-Left", "SDLC"]
+    },
+    {
+      "icon": "bi-gear-wide-connected",
+      "eyebrow": "Automation",
+      "title": "Framework Architecture",
+      "text": "Designed a Java/TestNG/Selenium framework (POM, data-driven, parallel execution on Selenium Grid) powering smoke, sanity, regression and performance suites.",
+      "chips": ["Java", "TestNG", "Selenium Grid"]
+    },
+    {
+      "icon": "bi-plug",
+      "eyebrow": "Backend",
+      "title": "API Automation in Code",
+      "text": "Built REST API coverage across 35+ endpoints with REST Assured: authentication, tokens, session management and request/response verification.",
+      "chips": ["REST Assured", "Postman", "SoapUI"]
+    },
+    {
+      "icon": "bi-box",
+      "eyebrow": "Reliability",
+      "title": "CI/CD & Suite Reliability",
+      "text": "Ran containerized suites with Docker on AWS through TeamCity and Jenkins pipelines, cutting runtime by 25% and flaky failures by 30%.",
+      "chips": ["Docker", "AWS", "Jenkins"]
+    },
+    {
+      "icon": "bi-cpu",
+      "eyebrow": "AI Tooling",
+      "title": "AI-Accelerated QA",
+      "text": "Used Codex and GitHub Copilot to speed up test-case generation, strategy design and framework development, cutting test design time by 30%.",
+      "chips": ["Codex", "GitHub Copilot", "Claude"]
+    },
+    {
+      "icon": "bi-mortarboard",
+      "eyebrow": "Mentorship",
+      "title": "Mentorship & Enablement",
+      "text": "Mentored engineers across the organization on framework design, coding standards, test design and CI/CD integration.",
+      "chips": ["Coaching", "Standards", "Code Review"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "QA Engineer",
+      "period": "2023 &ndash; 2026",
+      "company": "QAT Global",
+      "bullets": [
+        "Owned test strategy and execution across the full SDLC, supporting both Agile and Waterfall delivery models",
+        "Proposed and rolled out risk-based, shift-left and API-first testing strategies with developers and Product Owners",
+        "Built REST API validation coverage across 35+ endpoints in code with REST Assured &mdash; authentication, tokens and session management",
+        "Hardened reliability through systematic negative testing, uncovering 50+ defects before release",
+        "Ran containerized test suites with Docker on AWS through TeamCity pipelines",
+        "Used AI tooling (Codex) to speed up test-case generation and framework development, cutting test design time by 30%"
+      ],
+      "tools": "Selenium · Playwright · REST Assured · Postman · SoapUI · JMeter · Docker · AWS · TeamCity · Jenkins · Gradle · Azure DevOps · JIRA · React · Angular"
+    },
+    {
+      "role": "Software Automation Engineer",
+      "period": "2020 &ndash; 2023",
+      "company": "Micro Focus (now OpenText)",
+      "bullets": [
+        "Designed a Java/TestNG/Selenium framework (POM, data-driven, parallel execution on Selenium Grid) powering smoke, sanity, regression and performance suites",
+        "Added API test coverage in code with REST Assured alongside the UI suite",
+        "Containerized the automation suite with Docker so Jenkins pipelines ran identical environments on every build",
+        "Built reusable test-data factories and SQL seeding scripts for Oracle and PostgreSQL",
+        "Scaled a regression suite with parallel execution in Jenkins, cutting runtime by 25% and flaky failures by 30%",
+        "Mentored engineers across the organization on framework design, coding standards and CI/CD integration"
+      ],
+      "tools": "RHEL · Linux SUSE · Jenkins · Docker · Java · Selenium · Selenium Grid · REST Assured · Gradle · TestNG · Cypress · Oracle · PostgreSQL · JIRA · Octane"
+    },
+    {
+      "role": "Testing and Automation Engineer",
+      "period": "2019 &ndash; 2020",
+      "company": "HPE",
+      "bullets": [
+        "Automated QA validation for ProLiant Gen10 server hardware, software and configuration layers, validating 30+ server configurations",
+        "Validated firmware/BIOS configurations on ProLiant Gen10 servers",
+        "Led automation innovation across QA teams, introducing tooling that replaced manual server validation workflows",
+        "Built functional, integration and performance testing suites end-to-end"
+      ],
+      "tools": "RHEL · Linux SUSE · Unix · Jenkins · Java · Python · C++ · Selenium · Gradle · TestNG · Oracle · MySQL · Perl · Pandas · Jupyter"
+    }
+  ],
+  "skills": {
+    "left": [
+      { "icon": "bi-code-slash", "title": "Languages &amp; Scripting", "tags": ["C++", "Java (incl. Java EE)", "Python", "JavaScript", "TypeScript", "Perl", "SQL"] },
+      { "icon": "bi-robot", "title": "Automation &amp; Testing", "tags": ["Selenium", "TestNG", "JUnit", "pytest", "REST Assured", "Playwright", "Cypress", "Cucumber (BDD)", "Postman", "SoapUI", "JMeter", "Swagger/OpenAPI", "Appium (academic)"] },
+      { "icon": "bi-diagram-3", "title": "Frameworks &amp; Design Patterns", "tags": ["POM", "MVC", "Singleton", "Data-Driven", "Selenium Grid"] },
+      { "icon": "bi-arrow-repeat", "title": "CI/CD &amp; Build", "tags": ["Jenkins", "GitHub Actions", "Gradle", "TeamCity", "Azure DevOps"] },
+      { "icon": "bi-box", "title": "Cloud &amp; Containers", "tags": ["Docker", "AWS", "Microsoft Azure"] },
+      { "icon": "bi-git", "title": "Version Control", "tags": ["Git", "Git Bash", "GitHub", "Azure Repos"] }
+    ],
+    "right": [
+      { "icon": "bi-database", "title": "Databases", "tags": ["MySQL", "Oracle", "PostgreSQL", "MS SQL Server", "SQL"] },
+      { "icon": "bi-globe", "title": "Web Development", "tags": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Materialize", "React", "Angular"] },
+      { "icon": "bi-bar-chart-line", "title": "Data Analysis", "tags": ["Python", "Pandas", "Jupyter"] },
+      { "icon": "bi-terminal", "title": "Operating Systems", "tags": ["Linux SUSE", "Linux RHEL", "Windows Server", "Unix"] },
+      { "icon": "bi-kanban", "title": "Methodologies", "tags": ["Agile (Scrum, Kanban)", "Waterfall", "Shift-Left Testing", "Risk-Based Testing", "BDD", "TDD", "Test Planning", "STLC", "SDLC"] },
+      { "icon": "bi-clipboard-check", "title": "Project &amp; Test Management", "tags": ["JIRA", "Azure DevOps", "ALM/Octane", "TestLink", "Rally", "Jama Connect"] }
+    ],
+    "wide": [
+      { "icon": "bi-cpu", "title": "AI-Assisted Testing", "tags": ["Codex", "GitHub Copilot", "ChatGPT", "Claude"] },
+      { "icon": "bi-translate", "title": "Languages Spoken", "tags": ["Spanish (Native)", "English (Advanced/Fluent)"] }
+    ]
+  }
+}

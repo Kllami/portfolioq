@@ -56,7 +56,7 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-<link href="css/style.css?v=10" rel="stylesheet" />
+<link href="css/style.css?v=12" rel="stylesheet" />
 </head>
 
 <body>
@@ -96,15 +96,15 @@
         <p class="hero-eyebrow">Hi, I'm</p>
         <h1>Johnny Chacón Gairaud</h1>
         <p class="hero-role">
-          <span class="typed" data-typed-items="Sr. QA &amp; Software Engineer, Test Automation Specialist, Tech Enthusiast, QA Analyst, Problem Solver, Senior SDET, Systems Engineer"></span>
+          <span class="typed" data-typed-items=""></span>
         </p>
-        <p class="hero-summary">
-          Senior QA Engineer specializing in Manual and Automation Testing, with 7+ years architecting test
-          strategies across web, desktop, API, and hardware platforms. Fluent in English, remote-ready.
-        </p>
+        <p class="hero-summary"></p>
+        <noscript>
+          <p class="hero-summary">Senior QA Engineer and test automation specialist. Enable JavaScript to see the full profile, or download the resume below.</p>
+        </noscript>
         <div class="hero-cta">
           <a href="#contact" class="btn-main">Contact Me</a>
-          <a href="assets/Johnny_Chacon_Gairaud_Resume_q.pdf" class="btn-outline" download>
+          <a href="assets/Johnny_Chacon_Gairaud_Resume_q.pdf" class="btn-outline" id="resume-download" download>
             <i class="bi bi-download"></i> Download Resume (.pdf file)
           </a>
         </div>
@@ -134,14 +134,7 @@
 
       <div class="row gy-4 align-items-stretch">
         <div class="col-lg-7">
-          <p class="about-text">
-            QA Engineer with 7+ years balancing Manual and Automation Testing across web, desktop, API, and hardware
-            platforms. Skilled in Functional, Regression, API, Performance, and End-to-End Testing, catching critical
-            defects and creating detailed test plans, test cases, and documentation. Equally experienced
-            architecting automation frameworks integrated with CI/CD pipelines, automating UI and API testing, and
-            leveraging AI-powered tools to accelerate test design and execution. Agile/Scrum collaborator working
-            closely with developers and product owners, remote-first, and fluent in English.
-          </p>
+          <p class="about-text"></p>
           <ul class="about-info">
             <li><i class="bi bi-geo-alt"></i> Heredia, Costa Rica</li>
             <li><i class="bi bi-telephone"></i> +506 8766 2321</li>
@@ -169,74 +162,7 @@
         <p>Where I add value beyond writing tests</p>
       </div>
 
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
-          <div class="spotlight-card">
-            <i class="bi bi-compass spotlight-bg-icon"></i>
-            <span class="spotlight-eyebrow">Strategy</span>
-            <h3>Test Strategy &amp; Architecture</h3>
-            <p>Architected end-to-end test strategies across Agile and Waterfall SDLCs, aligning coverage with release risk and business priorities.</p>
-            <div class="spotlight-chips">
-              <span>Agile</span><span>Waterfall</span><span>SDLC</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
-          <div class="spotlight-card">
-            <i class="bi bi-gear-wide-connected spotlight-bg-icon"></i>
-            <span class="spotlight-eyebrow">Automation</span>
-            <h3>Automation Framework Development</h3>
-            <p>Built and maintained scalable automation frameworks powering smoke, sanity, regression, and performance suites.</p>
-            <div class="spotlight-chips">
-              <span>Selenium</span><span>Playwright</span><span>Cypress</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="160">
-          <div class="spotlight-card">
-            <i class="bi bi-plug spotlight-bg-icon"></i>
-            <span class="spotlight-eyebrow">Backend</span>
-            <h3>API &amp; Backend Validation</h3>
-            <p>Engineered REST API test coverage — authentication, authorization, and session management.</p>
-            <div class="spotlight-chips">
-              <span>Postman</span><span>SoapUI</span><span>REST</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="240">
-          <div class="spotlight-card">
-            <i class="bi bi-people spotlight-bg-icon"></i>
-            <span class="spotlight-eyebrow">Collaboration</span>
-            <h3>Cross-Functional Collaboration</h3>
-            <p>Partnered with developers, Product Owners, BAs, and clients to scope requirements and de-risk releases.</p>
-            <div class="spotlight-chips">
-              <span>Developers</span><span>Product Owners</span><span>QA Peers</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="320">
-          <div class="spotlight-card">
-            <i class="bi bi-cpu spotlight-bg-icon"></i>
-            <span class="spotlight-eyebrow">AI Tooling</span>
-            <h3>AI-Accelerated QA</h3>
-            <p>Leveraging AI tools to speed up test-case generation, automation development, and defect analysis.</p>
-            <div class="spotlight-chips">
-              <span>Codex</span><span>Claude</span><span>Cursor</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="spotlight-card">
-            <i class="bi bi-mortarboard spotlight-bg-icon"></i>
-            <span class="spotlight-eyebrow">Mentorship</span>
-            <h3>Mentorship &amp; Team Enablement</h3>
-            <p>Mentored incoming engineers on coding standards and automation best practices, boosting team velocity.</p>
-            <div class="spotlight-chips">
-              <span>Coaching</span><span>Standards</span><span>Best Practices</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row gy-4" id="leadership-grid"></div>
     </div>
   </section>
 
@@ -252,44 +178,7 @@
         <div class="col-lg-6">
           <h3 class="resume-title"><i class="bi bi-briefcase"></i> Work Experience</h3>
 
-          <div class="resume-item">
-            <h4>QA Engineer</h4>
-            <h5>2023 &ndash; 2026</h5>
-            <p><em>QAT Global</em></p>
-            <ul>
-              <li>Architected and executed test strategies across the full SDLC, supporting Agile and Waterfall delivery models</li>
-              <li>Engineered REST API validation coverage — authentication/authorization, tokens, session management</li>
-              <li>Hardened application reliability through systematic negative testing against edge cases and invalid inputs</li>
-              <li>Validated web applications built on React and Angular</li>
-              <li>Leveraged AI tooling (Codex) to accelerate test-case generation and automation framework development</li>
-            </ul>
-            <p class="resume-tools">Selenium · Playwright · POM · Postman · SoapUI · JMeter · Jenkins · Gradle · TeamCity · Azure DevOps · JIRA · React · Angular</p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Software Automation Engineer</h4>
-            <h5>2020 &ndash; 2023</h5>
-            <p><em>Micro Focus</em></p>
-            <ul>
-              <li>Engineered and maintained automation frameworks powering smoke, sanity, regression, and performance suites</li>
-              <li>Delivered manual and exploratory testing coverage, triaging user-facing defects</li>
-              <li>Drove release readiness as an embedded member of the Scrum team</li>
-              <li>Mentored incoming engineers on coding standards and automation best practices</li>
-            </ul>
-            <p class="resume-tools">RHEL · Linux SUSE · Jenkins · Java · Selenium · Gradle · TestNG · Cypress · Postman · Oracle · PostgreSQL · JIRA · Octane</p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Testing and Automation Engineer</h4>
-            <h5>2019 &ndash; 2020</h5>
-            <p><em>HPE</em></p>
-            <ul>
-              <li>Automated QA validation for ProLiant Gen10 server hardware and configuration layers</li>
-              <li>Architected scalable automation solutions with cross-functional teams</li>
-              <li>Engineered functional, integration, and performance testing suites end-to-end</li>
-            </ul>
-            <p class="resume-tools">RHEL · Linux SUSE · Unix · Jenkins · Java · Python · C++ · Selenium · Gradle · TestNG · Oracle · MySQL · Perl · Pandas · Jupyter</p>
-          </div>
+          <div id="work-experience"></div>
         </div>
 
         <div class="col-lg-6">
@@ -336,88 +225,7 @@
         <p>Languages, frameworks &amp; tools I work with</p>
       </div>
 
-      <div class="row gy-4">
-        <div class="col-lg-6">
-          <div class="skill-card">
-            <h3><i class="bi bi-code-slash"></i> Languages &amp; Scripting</h3>
-            <div class="tag-cloud">
-              <span>C++</span><span>Java EE</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Perl</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-robot"></i> Automation &amp; Testing</h3>
-            <div class="tag-cloud">
-              <span>Selenium</span><span>TestNG</span><span>Playwright</span><span>Cypress</span><span>Postman</span><span>SoapUI</span><span>JMeter</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-diagram-3"></i> Frameworks &amp; Design Patterns</h3>
-            <div class="tag-cloud">
-              <span>POM</span><span>MVC</span><span>Singleton</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-arrow-repeat"></i> CI/CD &amp; Build</h3>
-            <div class="tag-cloud">
-              <span>Jenkins</span><span>Gradle</span><span>TeamCity</span><span>Azure DevOps</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-git"></i> Version Control</h3>
-            <div class="tag-cloud">
-              <span>Git</span><span>Git Bash</span><span>GitHub</span><span>Azure Repos</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="skill-card">
-            <h3><i class="bi bi-database"></i> Databases</h3>
-            <div class="tag-cloud">
-              <span>MySQL</span><span>Oracle</span><span>PostgreSQL</span><span>MS SQL Server</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-globe"></i> Web Development</h3>
-            <div class="tag-cloud">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span><span>Materialize</span><span>React</span><span>Angular</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-bar-chart-line"></i> Data Analysis</h3>
-            <div class="tag-cloud">
-              <span>Python</span><span>Pandas</span><span>Jupyter</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-terminal"></i> Operating Systems</h3>
-            <div class="tag-cloud">
-              <span>Linux SUSE</span><span>Linux RHEL</span><span>Windows Server</span><span>Unix</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3><i class="bi bi-kanban"></i> Agile &amp; Project Management</h3>
-            <div class="tag-cloud">
-              <span>Scrum</span><span>Kanban</span><span>JIRA</span><span>Rally</span><span>Jama Connect</span><span>TestLink</span><span>Octane</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row gy-4 mt-2">
-        <div class="col-lg-6">
-          <div class="skill-card">
-            <h3><i class="bi bi-cpu"></i> AI Tooling</h3>
-            <div class="tag-cloud"><span>Codex</span><span>Claude</span><span>Cursor</span><span>ChatGPT</span></div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="skill-card">
-            <h3><i class="bi bi-translate"></i> Languages Spoken</h3>
-            <div class="tag-cloud"><span>Spanish (Native)</span><span>English (Advanced/Fluent)</span></div>
-          </div>
-        </div>
-      </div>
+      <div id="skills-content"></div>
 
     </div>
   </section>
@@ -529,9 +337,33 @@
   <div class="container text-center">
     <p class="footer-quote">&ldquo;Anyone who has never made a mistake has never tried anything new&rdquo; &ndash; Albert Einstein</p>
     <p class="footer-quote">&ldquo;It always seems impossible until it is done&rdquo; &ndash; Nelson Mandela</p>
-    <p>&copy; <span id="year"></span> Johnny Chacón Gairaud. All rights reserved.</p>
+    <p>
+      &copy; <span id="year"></span> Johnny Chacón Gairaud. All rights reserved.
+      <button type="button" id="admin-dot" class="admin-dot" aria-label="Site settings" title="Site settings"></button>
+    </p>
   </div>
 </footer>
+
+<!-- Owner-only version switch (writes are rejected unless signed in) -->
+<div id="admin-panel" class="admin-panel" hidden>
+  <form id="admin-login" class="admin-login">
+    <label for="admin-password">Password</label>
+    <input type="password" id="admin-password" autocomplete="current-password" required />
+    <button type="submit" class="admin-btn">Unlock</button>
+  </form>
+
+  <div id="admin-controls" class="admin-controls" hidden>
+    <span class="admin-title">Public site version</span>
+    <label class="admin-switch">
+      <input type="checkbox" id="admin-toggle" />
+      <span class="admin-slider"></span>
+    </label>
+    <span id="admin-state" class="admin-state">Original</span>
+    <button type="button" id="admin-logout" class="admin-link">Sign out</button>
+  </div>
+
+  <p id="admin-msg" class="admin-msg" role="status"></p>
+</div>
 
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -540,6 +372,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
 
-<script src="js/main.js?v=3" defer></script>
+<script src="js/main.js?v=4" defer></script>
+<script type="module" src="js/version-switch.js?v=6"></script>
 </body>
 </html>
