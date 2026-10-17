@@ -56,7 +56,7 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-<link href="css/style.css?v=12" rel="stylesheet" />
+<link href="css/style.css?v=13" rel="stylesheet" />
 </head>
 
 <body>
@@ -104,7 +104,7 @@
         </noscript>
         <div class="hero-cta">
           <a href="#contact" class="btn-main">Contact Me</a>
-          <a href="assets/Johnny_Chacon_Gairaud_Resume_q.pdf" class="btn-outline" id="resume-download" download>
+          <a href="assets/resumes/ats_q.pdf" class="btn-outline" id="resume-download" download="Johnny_Chacon_Gairaud_Resume.pdf">
             <i class="bi bi-download"></i> Download Resume (.pdf file)
           </a>
         </div>
@@ -353,12 +353,22 @@
   </form>
 
   <div id="admin-controls" class="admin-controls" hidden>
-    <span class="admin-title">Public site version</span>
-    <label class="admin-switch">
-      <input type="checkbox" id="admin-toggle" />
-      <span class="admin-slider"></span>
-    </label>
-    <span id="admin-state" class="admin-state">Original</span>
+    <fieldset id="admin-options" class="admin-options">
+      <legend class="admin-title">Public site version</legend>
+      <div class="admin-group">
+        <span class="admin-group-name">ATS</span>
+        <label><input type="radio" name="site-version" value="ats_q" /> q</label>
+        <label><input type="radio" name="site-version" value="ats_i" /> i</label>
+        <label><input type="radio" name="site-version" value="ats_qi" /> qi</label>
+      </div>
+      <div class="admin-group">
+        <span class="admin-group-name">Normal</span>
+        <label><input type="radio" name="site-version" value="normal_q" /> q</label>
+        <label><input type="radio" name="site-version" value="normal_i" /> i</label>
+        <label><input type="radio" name="site-version" value="normal_qi" /> qi</label>
+      </div>
+    </fieldset>
+    <span id="admin-state" class="admin-state"></span>
     <button type="button" id="admin-logout" class="admin-link">Sign out</button>
   </div>
 
@@ -373,6 +383,6 @@
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
 
 <script src="js/main.js?v=4" defer></script>
-<script type="module" src="js/version-switch.js?v=6"></script>
+<script type="module" src="js/version-switch.js?v=7"></script>
 </body>
 </html>

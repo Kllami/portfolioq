@@ -1,0 +1,288 @@
+{
+  "label": "Normal · i",
+  "resume": {
+    "href": "assets/resumes/normal_i.pdf",
+    "label": "Download Resume (.pdf file)"
+  },
+  "typedItems": [
+    "Sr. QA & Software Engineer",
+    "Test Automation Specialist",
+    "Tech Enthusiast",
+    "QA Analyst",
+    "Problem Solver",
+    "Senior SDET",
+    "Systems Engineer"
+  ],
+  "heroSummary": "Automation-driven QA & Software Engineer with 7+ years architecting and scaling test automation across web, desktop, API, and hardware platforms. Fluent in English, remote-ready.",
+  "aboutText": "Automation-driven QA & Software Engineer with 7+ years architecting and scaling test automation across web, desktop, API, and hardware platforms. Track record engineering CI/CD-integrated automation suites, validating applications end-to-end, and leveraging AI tooling to accelerate test design and execution. Strong cross-functional collaborator in Agile/Scrum environments, comfortable owning problems independently, fluent in English, and remote-ready.",
+  "leadership": [
+    {
+      "icon": "bi-compass",
+      "eyebrow": "Strategy",
+      "title": "Test Strategy &amp; Architecture",
+      "text": "Architected end-to-end test strategies across Agile and Waterfall SDLCs, aligning coverage with release risk and business priorities.",
+      "chips": [
+        "Agile",
+        "Waterfall",
+        "SDLC"
+      ]
+    },
+    {
+      "icon": "bi-gear-wide-connected",
+      "eyebrow": "Automation",
+      "title": "Automation Framework Development",
+      "text": "Built and maintained scalable automation frameworks powering smoke, sanity, regression, and performance suites.",
+      "chips": [
+        "Selenium",
+        "Playwright",
+        "Cypress"
+      ]
+    },
+    {
+      "icon": "bi-plug",
+      "eyebrow": "Backend",
+      "title": "API &amp; Backend Validation",
+      "text": "Architected automated test coverage for web and API applications, improving release confidence and delivery velocity.",
+      "chips": [
+        "Postman",
+        "SoapUI",
+        "REST"
+      ]
+    },
+    {
+      "icon": "bi-people",
+      "eyebrow": "Collaboration",
+      "title": "Cross-Functional Collaboration",
+      "text": "Partnered with developers, Product Owners, BAs, and clients to scope requirements and de-risk releases.",
+      "chips": [
+        "Developers",
+        "Product Owners",
+        "QA Peers"
+      ]
+    },
+    {
+      "icon": "bi-cpu",
+      "eyebrow": "AI Tooling",
+      "title": "AI-Accelerated QA",
+      "text": "Leveraging AI tools to speed up test-case generation, automation development, and defect analysis.",
+      "chips": [
+        "Codex",
+        "Claude",
+        "Cursor"
+      ]
+    },
+    {
+      "icon": "bi-mortarboard",
+      "eyebrow": "Mentorship",
+      "title": "Mentorship &amp; Team Enablement",
+      "text": "Mentored incoming engineers on coding standards and automation best practices, boosting team velocity.",
+      "chips": [
+        "Coaching",
+        "Standards",
+        "Best Practices"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "QA Automation Engineer",
+      "period": "2024 &ndash; 2026",
+      "company": "Infinite Computer Solutions",
+      "bullets": [
+        "Architected and maintained automated test coverage for web and API applications, improving release confidence and accelerating delivery velocity",
+        "Executed functional, regression, integration, and end-to-end (E2E) testing to safeguard software quality and ensure reliable, production-ready releases",
+        "Partnered cross-functionally with product and engineering teams to clarify acceptance criteria, analyze requirements, and surface quality risks early in the SDLC",
+        "Triaged and root-caused defects in close collaboration with developers, prioritizing fixes based on customer impact and release risk",
+        "Drove test automation initiatives and contributed to CI/CD quality gates, reducing escaped defects and strengthening release-readiness practices",
+        "Operated within an Agile Scrum team, promoting strong quality practices, testability, and clear quality signals throughout the delivery lifecycle"
+      ],
+      "tools": "Selenium · Postman · JIRA · Jenkins · Azure DevOps · Git · Scrum"
+    },
+    {
+      "role": "Software Automation Engineer",
+      "period": "2020 &ndash; 2023",
+      "company": "Micro Focus",
+      "bullets": [
+        "Engineered and maintained automation frameworks powering smoke, sanity, regression, and performance test suites",
+        "Delivered manual testing and exploratory testing coverage for web applications, triaging user-facing defects",
+        "Drove release readiness as an embedded member of the Scrum team",
+        "Built reliable, cost-effective automation in close partnership with cross-functional business units",
+        "Executed established automation suites end-to-end, logging and debugging assigned issues",
+        "Mentored incoming engineers on coding standards and automation best practices, boosting team velocity"
+      ],
+      "tools": "RHEL · Linux SUSE · Jenkins · Java · Java EE · Selenium · Gradle · TestNG · Cypress · JavaScript · Oracle · PostgreSQL · HTML5 · CSS3 · Materialize · JIRA · Octane · Scrum · Postman · Git · GitHub · POM · MVC · Singleton · Kubernetes"
+    },
+    {
+      "role": "Testing and Automation Engineer",
+      "period": "2019 &ndash; 2020",
+      "company": "HPE",
+      "bullets": [
+        "Automated QA validation for ProLiant Gen10 server hardware, software, and configuration layers",
+        "Gathered cross-team requirements to architect scalable automation solutions",
+        "Identified automation opportunities and closed coverage gaps across manual QA workflows",
+        "Delivered manual testing and exploratory testing coverage for web applications",
+        "Engineered functional, integration testing, and performance testing suites end-to-end"
+      ],
+      "tools": "RHEL · Linux SUSE · Unix · Jenkins · Java · Python · C++ · Selenium · Gradle · TestNG · Oracle · MySQL · Perl · Pandas · Jupyter · HTML5 · CSS3 · JavaScript · JIRA · TestLink · Scrum · Postman · Git · GitHub"
+    },
+    {
+      "role": "Product Development Engineer",
+      "period": "2018 &ndash; 2019",
+      "company": "Intel",
+      "bullets": [
+        "Delivered manual testing and exploratory testing coverage for web applications",
+        "Automated testing and administrative workflows through custom scripting",
+        "Engineered testable, efficient code for unit, integration, and functional test cases, including smoke, sanity, and regression coverage"
+      ],
+      "tools": "RHEL · Jenkins · Java · Python · Selenium · Gradle · TestNG · PostgreSQL · MySQL · HTML5 · CSS3 · JavaScript · JIRA · Scrum · Postman · Git · GitHub"
+    },
+    {
+      "role": "CBK Technical Support Engineer",
+      "period": "2017 &ndash; 2018",
+      "company": "Tek-Experts",
+      "bullets": [
+        "Diagnosed and resolved complex customer issues within SLA-bound timelines",
+        "Escalated unresolved issues through standard procedures, partnering with internal teams to drive resolution",
+        "Delivered prompt, accurate feedback to customers throughout the resolution lifecycle",
+        "Documented technical workarounds, scaling institutional knowledge across the support org"
+      ],
+      "tools": "RHEL · Windows Server · JIRA · Scrum · MS SQL Server"
+    }
+  ],
+  "skills": {
+    "left": [
+      {
+        "icon": "bi-code-slash",
+        "title": "Languages &amp; Scripting",
+        "tags": [
+          "C++",
+          "Java EE",
+          "Python",
+          "JavaScript",
+          "Perl"
+        ]
+      },
+      {
+        "icon": "bi-robot",
+        "title": "Automation &amp; Testing",
+        "tags": [
+          "Selenium (Python &amp; Java)",
+          "TestNG",
+          "Playwright",
+          "Cypress",
+          "Postman",
+          "SoapUI"
+        ]
+      },
+      {
+        "icon": "bi-diagram-3",
+        "title": "Frameworks &amp; Design Patterns",
+        "tags": [
+          "Page Object Model (POM)",
+          "MVC",
+          "Singleton"
+        ]
+      },
+      {
+        "icon": "bi-arrow-repeat",
+        "title": "CI/CD &amp; Build",
+        "tags": [
+          "Jenkins",
+          "Gradle",
+          "TeamCity",
+          "Azure DevOps",
+          "Kubernetes"
+        ]
+      },
+      {
+        "icon": "bi-git",
+        "title": "Version Control",
+        "tags": [
+          "Git",
+          "Git Bash",
+          "GitHub",
+          "Azure Repos"
+        ]
+      },
+      {
+        "icon": "bi-database",
+        "title": "Databases",
+        "tags": [
+          "MySQL",
+          "Oracle",
+          "PostgreSQL",
+          "Microsoft SQL Server"
+        ]
+      }
+    ],
+    "right": [
+      {
+        "icon": "bi-globe",
+        "title": "Web Development",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Bootstrap",
+          "Materialize"
+        ]
+      },
+      {
+        "icon": "bi-bar-chart-line",
+        "title": "Data Analysis",
+        "tags": [
+          "Python",
+          "Pandas",
+          "Jupyter"
+        ]
+      },
+      {
+        "icon": "bi-terminal",
+        "title": "Operating Systems",
+        "tags": [
+          "Linux SUSE",
+          "Linux RHEL",
+          "Windows Server",
+          "Unix"
+        ]
+      },
+      {
+        "icon": "bi-kanban",
+        "title": "Agile Methodologies",
+        "tags": [
+          "Scrum",
+          "Kanban"
+        ]
+      },
+      {
+        "icon": "bi-clipboard-check",
+        "title": "Project &amp; Test Management",
+        "tags": [
+          "JIRA",
+          "Azure DevOps",
+          "Micro Focus ALM/Octane",
+          "TestLink",
+          "Rally",
+          "Jama Connect"
+        ]
+      }
+    ],
+    "wide": [
+      {
+        "icon": "bi-cpu",
+        "title": "AI Tooling",
+        "tags": [
+          "Codex"
+        ]
+      },
+      {
+        "icon": "bi-translate",
+        "title": "Languages Spoken",
+        "tags": [
+          "English (Advanced/Fluent)",
+          "Spanish (Native)"
+        ]
+      }
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 // Site version switch.
 //
-// index.html only holds the swappable zones (empty shells). All content comes from JSON:
-//   "original" -> content_original_short_q.json   (Claude cv original / Short / Resume_q)
-//   "copia"    -> content_copia_short_q.json      (Claude cv copia / Short / Resume_q)
+// index.html only holds the swappable zones (empty shells). All content comes from JSON,
+// one file per CV in "Curriculum claude" (para ATS / normales × Resume_q, _i, _qi):
+//   "<family>_<variant>" -> content/<family>_<variant>.json + assets/resumes/<family>_<variant>.pdf
 //
 // Firebase Realtime Database stores which one is live, at `siteVersion`.
 // Anyone can READ that value; only the signed-in owner can WRITE it (database rules).
-// The hidden control in the footer (the © dot) opens the password prompt and the switch.
-// The switch is the only way to change the version: there is no URL override.
+// The hidden control in the footer (the © dot) opens the password prompt and the radio buttons.
+// The radio buttons are the only way to change the version: there is no URL override.
 
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js';
 import {
@@ -19,10 +19,16 @@ import { getDatabase, ref, onValue, set } from 'https://www.gstatic.com/firebase
 const ADMIN_EMAIL = 'geotarsis@gmail.com';
 
 const VERSIONS = {
-  original: { file: 'content_original_short_q.json', label: 'Original' },
-  copia: { file: 'content_copia_short_q.json', label: 'Copia (2026 resume)' }
+  ats_q: { file: 'content/ats_q.json', label: 'ATS · Resume_q' },
+  ats_i: { file: 'content/ats_i.json', label: 'ATS · Resume_i' },
+  ats_qi: { file: 'content/ats_qi.json', label: 'ATS · Resume_qi' },
+  normal_q: { file: 'content/normal_q.json', label: 'Normal · Resume_q' },
+  normal_i: { file: 'content/normal_i.json', label: 'Normal · Resume_i' },
+  normal_qi: { file: 'content/normal_qi.json', label: 'Normal · Resume_qi' }
 };
-const DEFAULT_VERSION = 'original';
+// Values written by the old two-position switch, still possibly stored in Firebase.
+const LEGACY = { original: 'normal_q', copia: 'ats_q' };
+const DEFAULT_VERSION = 'ats_q';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDmsiRqfliZyvKGerolmY0TFg9LqV7SI_0',
@@ -93,6 +99,8 @@ let rendered = null;
 const applyVersion = async (version) => {
   if (!VERSIONS[version] || rendered === version) return;
   const c = await loadContent(version);
+  // A newer value may have arrived while this one was loading (e.g. a rejected write rolled back).
+  if (version !== currentVersion) return;
 
   $('.hero-summary').textContent = c.heroSummary;
   $('.about-text').textContent = c.aboutText;
@@ -103,6 +111,7 @@ const applyVersion = async (version) => {
   const dl = $('#resume-download');
   if (dl) {
     dl.setAttribute('href', c.resume.href);
+    dl.setAttribute('download', 'Johnny_Chacon_Gairaud_Resume.pdf');
     dl.innerHTML = `<i class="bi bi-download"></i> ${c.resume.label}`;
   }
 
@@ -132,7 +141,7 @@ const form = $('#admin-login');
 const input = $('#admin-password');
 const msg = $('#admin-msg');
 const controls = $('#admin-controls');
-const toggle = $('#admin-toggle');
+const options = $('#admin-options');
 const stateLabel = $('#admin-state');
 const logout = $('#admin-logout');
 
@@ -147,11 +156,10 @@ const closePanel = () => {
 
 // function declaration: hoisted, so the Firebase listener can call it on first paint
 function syncPanel() {
-  const t = document.querySelector('#admin-toggle');
+  const radio = document.querySelector(`input[name="site-version"][value="${currentVersion}"]`);
   const label = document.querySelector('#admin-state');
-  if (!t || !label) return;
-  t.checked = currentVersion === 'copia';
-  label.textContent = VERSIONS[currentVersion].label;
+  if (radio) radio.checked = true;
+  if (label) label.textContent = `Live: ${VERSIONS[currentVersion].label}`;
 }
 
 if (dot) {
@@ -189,18 +197,21 @@ if (form) {
   });
 }
 
-if (toggle) {
-  toggle.addEventListener('change', async () => {
-    const value = toggle.checked ? 'copia' : 'original';
+if (options) {
+  options.addEventListener('change', async (e) => {
+    const value = e.target.value;
+    if (!VERSIONS[value]) return;
     stateLabel.textContent = 'Saving…';
+    options.disabled = true;
     try {
       await set(versionRef, value);
       msg.textContent = '';
     } catch (err) {
       msg.textContent = 'Could not save (permission denied)';
-      toggle.checked = currentVersion === 'copia';
       syncPanel();
       console.warn('write failed', err.code || err);
+    } finally {
+      options.disabled = false;
     }
   });
 }
@@ -213,7 +224,8 @@ if (logout) {
 // Registered at the end so every helper above is already defined when the first
 // Firebase snapshot arrives (it fires synchronously from cache).
 onValue(versionRef, (snap) => {
-  const value = VERSIONS[snap.val()] ? snap.val() : DEFAULT_VERSION;
+  const stored = LEGACY[snap.val()] || snap.val();
+  const value = VERSIONS[stored] ? stored : DEFAULT_VERSION;
   currentVersion = value;
   applyVersion(value).catch(err => console.warn('version apply failed', err));
   syncPanel();
