@@ -10,7 +10,7 @@
     "Test Automation Specialist"
   ],
   "heroSummary": "Automation-driven Senior QA Engineer / SDET with 8+ years building and scaling test automation across web, desktop, API, and hardware platforms. Fluent in English, remote-ready.",
-  "aboutText": "Automation-driven Senior QA Engineer / SDET with 8+ years building and scaling test automation across web, desktop, API, and hardware platforms. Built and maintained 2,000+ automated tests across multiple roles with Selenium, Playwright, Java, Python, and TypeScript, cutting regression time by 20% through CI/CD quality gates that validate every pull request in Jenkins and Azure DevOps. Owns QA tech-stack architecture and tooling decisions, drives shift-left test strategy, API automation, and AI-assisted test design (Codex) as a strong cross-functional collaborator in Agile/Scrum teams, applying a Quality Engineering mindset and comfortable owning problems independently. Fluent in English, remote-ready, with US time-zone overlap.",
+  "aboutText": "Automation-driven, AI-augmented Senior QA Engineer / SDET with 8+ years building and scaling test automation across web, desktop, API, and hardware platforms. Built and maintained 2,000+ automated tests across multiple roles with Playwright, Cypress, and Selenium, using TypeScript, JavaScript, Java, C#, and Python. Designed regression suites that run on demand for internal builds in Jenkins, TeamCity, and Azure DevOps, and hardened them to reduce flaky tests and deliver faster, more reliable releases. Owns QA tech-stack architecture and tooling decisions, drives shift-left test strategy, API automation, and AI-assisted test design (Claude and Codex) as a strong cross-functional collaborator in Agile/Scrum teams, applying a Quality Engineering mindset and comfortable owning problems independently. Fluent in English, remote-ready, with US time-zone overlap.",
   "leadership": [
     {
       "icon": "bi-compass",
@@ -49,7 +49,7 @@
       "icon": "bi-box",
       "eyebrow": "Reliability",
       "title": "CI/CD & Suite Reliability",
-      "text": "Tested AWS-hosted, containerized products through TeamCity pipelines, set up quality gates on every pull request, and scaled parallel Jenkins regression runs, cutting runtime by 25% and flaky failures by 30%.",
+      "text": "Tested AWS-hosted, containerized products through TeamCity pipelines, set up on-demand quality gates for internal builds, and scaled parallel Jenkins regression runs, cutting runtime by 25% and flaky failures by 30%.",
       "chips": [
         "Docker",
         "AWS",
@@ -90,7 +90,7 @@
         "Built REST API validation coverage across 35+ endpoints in code with REST Assured — authentication/authorization testing (role-based access, token validation, session management) and request/response verification",
         "Hardened application reliability through systematic negative testing against edge cases and invalid inputs, uncovering 50+ defects before release",
         "Tested products hosted on AWS and deployed in containers, running automated suites through TeamCity pipelines to validate functionality, APIs, and end-to-end workflows",
-        "Set up CI/CD quality gates in TeamCity and Azure DevOps pipelines that validated every pull request with automated smoke tests for API, functional and UI testing checks, blocking merges on failures",
+        "Set up CI/CD quality gates in TeamCity and Azure DevOps pipelines with automated smoke tests for API, functional and UI testing checks that could be triggered on demand for internal builds",
         "Led root-cause analysis with developers, Product Owners, BAs, and QA peers; worked directly with clients to scope requirements and expected behavior",
         "Used AI tooling (Codex) to speed up test-case generation, strategy design, and framework development, reducing test-case design time by 30%"
       ],
@@ -158,6 +158,7 @@
         "title": "Languages &amp; Scripting",
         "tags": [
           "C++",
+          "C#",
           "Java (incl. Java EE)",
           "Python",
           "JavaScript",
