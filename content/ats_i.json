@@ -10,7 +10,7 @@
     "Test Automation Specialist"
   ],
   "heroSummary": "Automation-driven Senior QA Engineer / SDET with 8+ years building and scaling test automation across web, desktop, API, and hardware platforms. Fluent in English, remote-ready.",
-  "aboutText": "Automation-driven Senior QA Engineer / SDET with 8+ years building and scaling test automation across web, desktop, API, and hardware platforms. Built and maintained 2,000+ automated tests across multiple roles with Selenium, Playwright, Java, Python, and TypeScript, cutting regression time by 20% through CI/CD-integrated quality gates in Jenkins and Azure DevOps. Drives shift-left test strategy, API automation, and AI-assisted test design (Codex) as a strong cross-functional collaborator in Agile/Scrum teams, applying a Quality Engineering mindset and comfortable owning problems independently. Fluent in English, remote-ready, with US time-zone overlap.",
+  "aboutText": "Automation-driven Senior QA Engineer / SDET with 8+ years building and scaling test automation across web, desktop, API, and hardware platforms. Built and maintained 2,000+ automated tests across multiple roles with Selenium, Playwright, Java, Python, and TypeScript, cutting regression time by 20% through CI/CD quality gates that validate every pull request in Jenkins and Azure DevOps. Owns QA tech-stack architecture and tooling decisions, drives shift-left test strategy, API automation, and AI-assisted test design (Codex) as a strong cross-functional collaborator in Agile/Scrum teams, applying a Quality Engineering mindset and comfortable owning problems independently. Fluent in English, remote-ready, with US time-zone overlap.",
   "leadership": [
     {
       "icon": "bi-compass",
@@ -49,7 +49,7 @@
       "icon": "bi-box",
       "eyebrow": "Reliability",
       "title": "CI/CD & Suite Reliability",
-      "text": "Containerized suites with Docker for identical Jenkins runs and set up CI/CD quality gates in Azure DevOps, cutting runtime by 25% and flaky failures by 30%.",
+      "text": "Set up CI/CD quality gates in Azure DevOps that validate every pull request, and scaled parallel regression runs in Jenkins, cutting runtime by 25% and flaky failures by 30%.",
       "chips": [
         "Docker",
         "Jenkins",
@@ -85,14 +85,14 @@
       "period": "2024 &ndash; 2026",
       "company": "Infinite Computer Solutions",
       "bullets": [
-        "Built and maintained automated test coverage for web and API applications, improving release confidence and cutting regression execution time from 2 days to 1 day",
+        "Built and maintained automated test coverage for web and API applications, improving release confidence and cutting regression execution time from 6 hours to 5 hours",
         "Wrote API regression suites in code with REST Assured, replacing manual Postman collections and running them on every Azure DevOps build",
         "Ran functional, regression, integration, and end-to-end (E2E) testing to safeguard software quality and ensure reliable, production-ready releases",
         "Partnered with product and engineering teams to clarify acceptance criteria, analyze requirements, and surface quality risks early in the SDLC",
         "Triaged and root-caused defects with developers, prioritizing fixes based on customer impact and release risk",
-        "Set up CI/CD quality gates in Microsoft Azure DevOps pipelines, reducing escaped defects and strengthening release readiness",
+        "Set up CI/CD quality gates in Azure DevOps pipelines that validated every pull request with automated smoke, API, and regression checks, blocking merges on failures and reducing escaped defects",
         "Used Codex/GitHub Copilot to speed up test-case generation, reducing test design time by 20%",
-        "Worked in an Agile Scrum team, promoting quality practices, testability, and clear quality signals across the delivery lifecycle"
+        "Defined the QA tech-stack architecture: evaluated and selected automation tools (Selenium, Cypress, REST Assured, Postman) and documented the rationale behind each tooling decision for the team"
       ],
       "tools": "Selenium · Cypress · REST Assured · Postman · Jenkins · Azure DevOps · Microsoft Azure · Azure Repos · Git · SQL · JIRA · Codex · Scrum"
     },
@@ -103,7 +103,7 @@
       "bullets": [
         "Designed a Java/TestNG/Selenium framework (POM, data-driven, parallel execution on Selenium Grid) powering smoke, sanity, regression, and performance suites",
         "Added API test coverage in code with REST Assured alongside the UI suite, cutting reliance on manual checks",
-        "Containerized the automation suite with Docker so Jenkins pipelines ran identical environments on every build",
+        "Tested a containerized release of the application running on Docker, executing the automation suites against the containerized environment",
         "Built reusable test-data factories and SQL seeding scripts for Oracle and PostgreSQL, removing stale-data failures across environments",
         "Scaled a regression suite with parallel execution in Jenkins, cutting runtime by 25% and flaky failures by 30%",
         "Complemented automation with manual testing and exploratory testing of enterprise web applications, triaging user-facing defects before release",
