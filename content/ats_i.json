@@ -38,7 +38,7 @@
       "icon": "bi-plug",
       "eyebrow": "Backend",
       "title": "API Automation in Code",
-      "text": "Wrote API regression suites in code with REST Assured, replacing manual Postman collections and running them on every Azure DevOps build.",
+      "text": "Wrote API test scenarios for regression suites in code with REST Assured, replacing manual Postman collections and ensuring they could be executed on Azure DevOps for internal builds.",
       "chips": [
         "REST Assured",
         "Postman",
@@ -86,11 +86,11 @@
       "company": "Infinite Computer Solutions",
       "bullets": [
         "Built and maintained automated test coverage for web and API applications, improving release confidence and cutting regression execution time from 6 hours to 5 hours",
-        "Wrote API regression suites in code with REST Assured, replacing manual Postman collections and running them on every Azure DevOps build",
+        "Wrote API test scenarios for regression suites in code with REST Assured, replacing manual Postman collections and ensuring they could be executed on Azure DevOps for internal builds",
         "Ran functional, regression, integration, and end-to-end (E2E) testing to safeguard software quality and ensure reliable, production-ready releases",
         "Partnered with product and engineering teams to clarify acceptance criteria, analyze requirements, and surface quality risks early in the SDLC",
         "Triaged and root-caused defects with developers, prioritizing fixes based on customer impact and release risk",
-        "Set up CI/CD quality gates in Azure DevOps pipelines that validated every pull request with automated smoke, API, and regression checks, blocking merges on failures and reducing escaped defects",
+        "Set up CI/CD quality gates in Azure DevOps pipelines that validated every pull request with automated smoke functional, UI and API test checks, blocking merges on failures and reducing escaped defects",
         "Used Codex/GitHub Copilot to speed up test-case generation, reducing test design time by 20%",
         "Defined the QA tech-stack architecture: evaluated and selected automation tools (Selenium, Cypress, REST Assured, Postman) and documented the rationale behind each tooling decision for the team"
       ],
